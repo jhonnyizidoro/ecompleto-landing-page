@@ -18,16 +18,16 @@ const getNavLinkStyles = ({ color }: NavLinkStyles) => {
 }
 
 export const NavElement = styled.nav`
-	padding: 10px 0;
+	padding: 20px 0;
 `
 
 export const NavContainer = styled.div`
-	display: flex;
 	align-items: center;
+	display: flex;
 	justify-content: space-between;
-	width: 1400px;
-	max-width: 100%;
 	margin: auto;
+	max-width: 100%;
+	width: 1400px;
 `
 
 export const NavLogo = styled.a`
