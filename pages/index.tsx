@@ -7,6 +7,7 @@ import Partners from '@/components/Partners'
 import Sell from '@/components/Sell'
 import Chart from '@/components/Chart'
 import SEO from '@/components/SEO/SEO'
+import Contact from '@/components/Contact'
 
 const HomePage: FC = () => (
 	<>
@@ -17,6 +18,7 @@ const HomePage: FC = () => (
 		<Sell />
 		<Chart />
 		<SEO />
+		<Contact />
 	</>
 )
 

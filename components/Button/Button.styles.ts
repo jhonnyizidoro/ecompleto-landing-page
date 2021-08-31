@@ -1,7 +1,22 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Colors, Fonts } from '@/styles/variables'
+import { ButtonProps } from '@/components/Button/Button'
 
-export const ButtonElement = styled.button`
+const getButtonStyles = ({ isLarge }: ButtonProps) => {
+	if (isLarge) {
+		return css`
+			padding: 20px;
+			width: 100%;
+		`
+	} else {
+		return css`
+			padding: 15px;
+		`
+	}
+}
+
+export const ButtonElement = styled.button<ButtonProps>`
+	${getButtonStyles};
 	background: ${Colors.GREEN};
 	border: 0;
 	border-radius: 6px;
@@ -10,5 +25,4 @@ export const ButtonElement = styled.button`
 	cursor: pointer;
 	font-size: 1.2rem;
 	font-weight: ${Fonts.BOLD};
-	padding: 15px;
 `

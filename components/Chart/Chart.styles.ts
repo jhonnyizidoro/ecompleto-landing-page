@@ -11,6 +11,8 @@ export const ChartBackground = styled.div`
 	clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
 	height: 100%;
 	position: absolute;
+	right: 0;
+	top: 0;
 	width: 100%;
 `
 
