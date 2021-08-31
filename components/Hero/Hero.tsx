@@ -21,7 +21,7 @@ const Hero: FC = () => (
 				<HeroTitleLarge>Nós vamos te ajudar!</HeroTitleLarge>
 			</HeroTitle>
 			<HeroImage
-				src="/images/site-devices.png"
+				src="/images/hero/site-devices.png"
 				alt="Site ShiftCar na versão mobile e desktop"
 			/>
 		</HeroMain>

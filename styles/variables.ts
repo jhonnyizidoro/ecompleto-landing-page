@@ -5,6 +5,7 @@ export const Colors = {
 	GREEN: '#65A838',
 	WHITE: '#FFFFFF',
 	DARK: '#242424',
+	LIGHTGRAY: '#CBCBCB',
 }
 
 export const Fonts = {
