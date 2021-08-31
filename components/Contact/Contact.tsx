@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import Button from '@/components/Button'
 
 import {
 	ContactWrapper,
@@ -11,7 +12,6 @@ import {
 	ContactFormTitle,
 	ContactInput,
 } from './Contact.styles'
-import Button from '@/components/Button'
 
 const Contact: FC = () => (
 	<ContactWrapper>

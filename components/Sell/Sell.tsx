@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { openWhatsApp } from '@/util/contact'
 
 import Button from '@/components/Button'
 
@@ -23,7 +24,7 @@ const Sell: FC = () => (
 				<SellTitleLarge>dos mais diversos</SellTitleLarge>
 			</SellTitle>
 			<SellSubtitle>veículos</SellSubtitle>
-			<Button type="button" aria-label="Entre em contato conosco">
+			<Button type="button" aria-label="Entre em contato conosco" onClick={openWhatsApp}>
 				Quero vender mais
 			</Button>
 		</SellContent>

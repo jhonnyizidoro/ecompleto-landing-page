@@ -1,4 +1,5 @@
 import { FC, useCallback, useState } from 'react'
+import { openWhatsApp } from '@/util/contact'
 
 import Logo from '@/assets/logo.svg'
 import Hamburger from '@/components/Hamburger'
@@ -22,13 +23,13 @@ const Nav: FC = () => {
 				<Hamburger isActive={isActive} onClick={toggleMenu} />
 
 				<NavLinks isActive={isActive}>
-					<NavLink color="blue" href="/">
+					<NavLink
+						color="blue"
+						onClick={() => window.open('https://www.ecompletocarros.com.br/')}
+					>
 						Home
 					</NavLink>
-					<NavLink color="blue" href="/">
-						Resultados
-					</NavLink>
-					<NavLink color="green" href="/">
+					<NavLink color="green" onClick={openWhatsApp}>
 						WhatsApp
 					</NavLink>
 				</NavLinks>

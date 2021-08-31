@@ -80,8 +80,9 @@ export const NavLinks = styled.div<NavLinksStyles>`
 	}
 `
 
-export const NavLink = styled.a<NavLinkStyles>`
+export const NavLink = styled.span<NavLinkStyles>`
 	${getNavLinkStyles};
+	cursor: pointer;
 
 	${Medias.DESKTOP} {
 		margin-left: 25px;

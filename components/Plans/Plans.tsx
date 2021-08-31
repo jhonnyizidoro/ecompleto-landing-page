@@ -1,5 +1,7 @@
 import { FC } from 'react'
+import { openWhatsApp } from '@/util/contact'
 
+import Button from '@/components/Button'
 import MedalIcon from '@/assets/icons/medal.svg'
 
 import {
@@ -15,7 +17,6 @@ import {
 	PlansCardFooter,
 	PlansButtonWrapper,
 } from './Plans.styles'
-import Button from '@/components/Button'
 
 const Plans: FC = () => (
 	<>
@@ -80,7 +81,12 @@ const Plans: FC = () => (
 			</PlansCards>
 
 			<PlansButtonWrapper>
-				<Button type="button" aria-label="Entre em contato" isLarge>
+				<Button
+					type="button"
+					aria-label="Entre em contato"
+					isLarge
+					onClick={openWhatsApp}
+				>
 					Falar com um <br />
 					especialista
 				</Button>
