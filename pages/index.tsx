@@ -9,6 +9,7 @@ import Chart from '@/components/Chart'
 import SEO from '@/components/SEO'
 import Contact from '@/components/Contact'
 import Plans from '@/components/Plans'
+import Footer from '@/components/Footer'
 
 const HomePage: FC = () => (
 	<>
@@ -21,6 +22,7 @@ const HomePage: FC = () => (
 		<SEO />
 		<Contact />
 		<Plans />
+		<Footer />
 	</>
 )
 
