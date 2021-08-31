@@ -5,6 +5,7 @@ import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import Partners from '@/components/Partners'
 import Sell from '@/components/Sell'
+import Chart from '@/components/Chart'
 
 const HomePage: FC = () => (
 	<>
@@ -13,6 +14,7 @@ const HomePage: FC = () => (
 		<Hero />
 		<Partners />
 		<Sell />
+		<Chart />
 	</>
 )
 
