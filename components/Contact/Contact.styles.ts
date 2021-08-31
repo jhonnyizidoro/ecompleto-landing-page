@@ -5,6 +5,7 @@ import { Colors, Fonts } from '@/styles/variables'
 export const ContactWrapper = styled.section`
 	margin-top: -150px;
 	overflow: hidden;
+	padding-bottom: 30px;
 	position: relative;
 `
 
@@ -22,7 +23,7 @@ export const ContactBackground = styled.div`
 export const ContactBackgroundDecoration = styled(LazyLoadImage)`
 	position: absolute;
 	right: -120px;
-	top: 22px;
+	top: 25px;
 	width: 40%;
 `
 
