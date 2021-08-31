@@ -39,8 +39,8 @@ const SEO: FC<SEOProps> = ({ title, description, keyWords, canonical }) => (
 		<meta name="geo.region" content="BR-PR" />
 		<meta name="ICBM" content="-25.480876, -49.304425" />
 
-		<meta name="theme-color" content={Colors.BLUE} />
-		<meta name="msapplication-TileColor" content={Colors.BLUE} />
+		<meta name="theme-color" content={Colors.BLUE_2} />
+		<meta name="msapplication-TileColor" content={Colors.BLUE_2} />
 		<meta name="msapplication-TileImage" content="/favicons/android-chrome-512x512.png" />
 
 		<meta property="og:title" content={title} />
