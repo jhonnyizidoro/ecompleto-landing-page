@@ -16,3 +16,9 @@ export const Fonts = {
 	REGULAR: 400,
 	BOLD: 700,
 }
+
+export const Medias = {
+	MOBILE: '@media (max-width: 768px)',
+	TABLET: '@media (max-width: 1024px)',
+	DESKTOP: '@media (min-width: 1024px)',
+}

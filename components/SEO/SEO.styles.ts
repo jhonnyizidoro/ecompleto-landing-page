@@ -1,14 +1,22 @@
 import styled from 'styled-components'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import { Colors, Fonts } from '@/styles/variables'
+import { Colors, Fonts, Medias } from '@/styles/variables'
 
 export const SEOTitle = styled.h5`
 	color: ${Colors.BLUE_3};
-	font-size: 3.5rem;
 	font-weight: ${Fonts.BOLD};
-	margin: 150px auto 0;
-	max-width: 950px;
 	text-align: center;
+
+	${Medias.DESKTOP} {
+		font-size: 3.5rem;
+		margin: 150px auto 0;
+		max-width: 950px;
+	}
+
+	${Medias.TABLET} {
+		font-size: 2rem;
+		margin-top: 100px;
+	}
 `
 
 export const SEOTitleGreen = styled.span`
@@ -16,15 +24,28 @@ export const SEOTitleGreen = styled.span`
 `
 
 export const SEOTitleLarge = styled.span`
-	font-size: 6rem;
+	${Medias.DESKTOP} {
+		font-size: 6rem;
+	}
+
+	${Medias.TABLET} {
+		font-size: 4rem;
+	}
 `
 
 export const SEOText = styled.p`
 	color: ${Colors.GREEN};
 	font-size: 1.3rem;
-	margin: 25px auto 50px;
-	max-width: 700px;
 	text-align: center;
+
+	${Medias.DESKTOP} {
+		margin: 25px auto 50px;
+		max-width: 700px;
+	}
+
+	${Medias.TABLET} {
+		padding: 55px 15px 50px;
+	}
 `
 
 export const SEOTextBlue = styled.span`
@@ -32,10 +53,13 @@ export const SEOTextBlue = styled.span`
 `
 
 export const SEOCards = styled.div`
-	display: flex;
-	justify-content: center;
 	position: relative;
 	z-index: 1;
+
+	${Medias.DESKTOP} {
+		display: flex;
+		justify-content: center;
+	}
 `
 
 export const SEOCard = styled.div`
@@ -46,6 +70,10 @@ export const SEOCard = styled.div`
 	margin: 0 20px;
 	padding: 35px 0;
 	text-align: center;
+
+	${Medias.TABLET} {
+		margin-bottom: 25px;
+	}
 `
 
 export const SEOCardImage = styled(LazyLoadImage)`
@@ -65,11 +93,19 @@ export const SEOCardTextLarge = styled.span`
 `
 
 export const SEOImageWrapper = styled.div`
-	text-align: center;
+	${Medias.DESKTOP} {
+		text-align: center;
+	}
+
+	${Medias.TABLET} {
+		display: none;
+	}
 `
 
 export const SEOImage = styled(LazyLoadImage)`
-	filter: drop-shadow(0 5px 12px rgba(0, 0, 0, 0.3));
-	margin: -30px 450px 0 0;
-	width: 450px;
+	${Medias.DESKTOP} {
+		filter: drop-shadow(0 5px 12px rgba(0, 0, 0, 0.3));
+		margin: -30px 450px 0 0;
+		width: 450px;
+	}
 `

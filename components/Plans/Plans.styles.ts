@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { Colors, Fonts } from '@/styles/variables'
+import { Colors, Fonts, Medias } from '@/styles/variables'
 
 interface PlansCardStyles {
 	isDark?: boolean
@@ -46,22 +46,33 @@ const getPlansCardIconStyles = ({ color }: PlansCardIconStyles) => {
 }
 
 export const PlansWrapper = styled.div`
-	background: linear-gradient(
-		to bottom,
-		transparent,
-		transparent 200px,
-		${Colors.BLUE_3} 200px,
-		${Colors.BLUE_1}
-	);
+	${Medias.DESKTOP} {
+		background: linear-gradient(
+			to bottom,
+			transparent,
+			transparent 200px,
+			${Colors.BLUE_3} 200px,
+			${Colors.BLUE_1}
+		);
+	}
 `
 
 export const PlansTitle = styled.h5`
 	color: ${Colors.BLUE_3};
-	font-size: 3.5rem;
 	font-weight: ${Fonts.BOLD};
-	margin: 150px auto 0;
-	max-width: 950px;
 	text-align: center;
+
+	${Medias.DESKTOP} {
+		font-size: 3.5rem;
+		margin: 150px auto 0;
+		max-width: 950px;
+	}
+
+	${Medias.TABLET} {
+		font-size: 1.6rem;
+		margin: 100px 0 15px;
+		padding: 0 15px;
+	}
 `
 
 export const PlansTitleGreen = styled.span`
@@ -70,36 +81,63 @@ export const PlansTitleGreen = styled.span`
 
 export const PlansText = styled.p`
 	color: ${Colors.BLUE_3};
-	font-size: 1.3rem;
-	margin: 25px auto 80px;
-	max-width: 600px;
 	text-align: center;
+
+	${Medias.DESKTOP} {
+		font-size: 1.3rem;
+		margin: 25px auto 80px;
+		max-width: 600px;
+	}
+
+	${Medias.TABLET} {
+		padding: 0 15px;
+	}
 `
 
 export const PlansCards = styled.div`
-	align-items: flex-end;
-	display: flex;
-	justify-content: center;
+	${Medias.DESKTOP} {
+		align-items: flex-end;
+		display: flex;
+		justify-content: center;
+	}
+
+	${Medias.MOBILE} {
+		padding: 0 15px;
+	}
 `
 
 export const PlansCard = styled.div<PlansCardStyles>`
 	${getPlansCardStyles};
 	border-radius: 20px;
 	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
-	flex-basis: 280px;
-	margin: 0 30px;
 	padding: 25px;
 	position: relative;
+
+	${Medias.DESKTOP} {
+		flex-basis: 280px;
+		margin: 0 30px;
+	}
+
+	${Medias.MOBILE} {
+		margin: 25px 0;
+	}
 `
 
 export const PlansCardIcon = styled.div<PlansCardIconStyles>`
 	${getPlansCardIconStyles};
 	position: absolute;
-	right: -20px;
 	top: -20px;
 
 	svg {
 		width: 50px;
+	}
+
+	${Medias.DESKTOP} {
+		right: -20px;
+	}
+
+	${Medias.MOBILE} {
+		right: 10px;
 	}
 `
 
@@ -123,8 +161,15 @@ export const PlansCardFooter = styled.div`
 `
 
 export const PlansButtonWrapper = styled.div`
-	margin: auto;
-	max-width: 400px;
-	padding: 200px 0;
 	text-align: center;
+
+	${Medias.DESKTOP} {
+		margin: auto;
+		max-width: 400px;
+		padding: 200px 0;
+	}
+
+	${Medias.MOBILE} {
+		padding: 50px 15px;
+	}
 `
