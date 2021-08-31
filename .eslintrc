@@ -1,0 +1,12 @@
+{
+  "extends": ["next", "next/core-web-vitals", "prettier"],
+  "plugins": ["prettier", "better-styled-components"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/self-closing-comp": "error",
+    "react/jsx-curly-brace-presence": ["error", "never"],
+    "react/jsx-boolean-value": ["error", "never"],
+    "react-hooks/exhaustive-deps": "error",
+    "better-styled-components/sort-declarations-alphabetically": "error"
+  }
+}
