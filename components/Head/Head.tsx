@@ -2,9 +2,9 @@ import { FC } from 'react'
 
 import { Colors } from '@/styles/variables'
 
-import Head from 'next/head'
+import NextHead from 'next/head'
 
-interface SEOProps {
+interface HeadProps {
 	title: string
 	description: string
 	keyWords: string
@@ -13,8 +13,8 @@ interface SEOProps {
 
 const siteName = 'E-completo Carros'
 
-const SEO: FC<SEOProps> = ({ title, description, keyWords, canonical }) => (
-	<Head>
+const Head: FC<HeadProps> = ({ title, description, keyWords, canonical }) => (
+	<NextHead>
 		<title>{title}</title>
 
 		<meta charSet="UTF-8" />
@@ -76,7 +76,7 @@ const SEO: FC<SEOProps> = ({ title, description, keyWords, canonical }) => (
 			href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
-	</Head>
+	</NextHead>
 )
 
-export default SEO
+export default Head
