@@ -1,8 +1,22 @@
 import styled, { css } from 'styled-components'
 import { Colors, Medias } from '@/styles/variables'
 
+interface NavLinksStyles {
+	isActive: boolean
+}
+
 interface NavLinkStyles {
 	color: 'blue' | 'green'
+}
+
+const getNavLinksStyles = ({ isActive }: NavLinksStyles) => {
+	if (!isActive) {
+		return css`
+			${Medias.TABLET} {
+				display: none;
+			}
+		`
+	}
 }
 
 const getNavLinkStyles = ({ color }: NavLinkStyles) => {
@@ -51,15 +65,30 @@ export const NavLogo = styled.a`
 	}
 `
 
-export const NavLinks = styled.div`
+export const NavLinks = styled.div<NavLinksStyles>`
+	${getNavLinksStyles};
+
 	${Medias.TABLET} {
-		display: none;
+		background: ${Colors.WHITE};
+		padding: 20px 0;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		top: 81px;
+		width: 100%;
+		z-index: 1;
 	}
 `
 
 export const NavLink = styled.a<NavLinkStyles>`
+	${getNavLinkStyles};
+
 	${Medias.DESKTOP} {
-		${getNavLinkStyles};
 		margin-left: 25px;
+	}
+
+	${Medias.TABLET} {
+		display: block;
+		padding: 20px;
 	}
 `
