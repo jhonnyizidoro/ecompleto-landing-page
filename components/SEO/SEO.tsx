@@ -38,7 +38,8 @@ const SEO: FC = () => (
 			<SEOCard>
 				<SEOCardImage src="/images/seo/seo-search-symbol.png" alt="" />
 				<SEOCardText>
-					A sua loja na 1ª pagina do Google <SEOCardTextLarge>sempre.</SEOCardTextLarge>
+					A sua loja bem colocada no resultado do{' '}
+					<SEOCardTextLarge>Google.</SEOCardTextLarge>
 				</SEOCardText>
 			</SEOCard>
 

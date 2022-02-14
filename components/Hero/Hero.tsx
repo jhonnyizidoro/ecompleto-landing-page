@@ -29,7 +29,9 @@ const Hero: FC = () => (
 			Tenha a sua loja em destaque nos buscadores e aumente em até
 			<HeroSubtitleGreen> 3X os acessos diários</HeroSubtitleGreen>
 		</HeroSubtitle>
-		<HeroText>Com a nossa indexação a sua loja aparece em primeiro sempre</HeroText>
+		<HeroText>
+			Com a nossa indexação a sua loja aparece bem colocada nos resultados de busca
+		</HeroText>
 	</HeroElement>
 )
 
