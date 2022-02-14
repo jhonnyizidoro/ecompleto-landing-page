@@ -62,9 +62,18 @@ const Chart: FC = () => (
 
 		<ChartContent>
 			<ChartText>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-				gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+				Para que a sua loja seja RELEVANTE é preciso ter um site com indexação de
+				QUALIDADE.
+				<br />
+				<br />
+				Após anos de experiência e diversos cases de sucesso podemos garantir resultados
+				surpeendentes como:
+				<br />
+				<br />
+				<strong>Aumento de vendas, Acessos orgânicos, Mais autoridade no ramo...</strong>
+				<br />
+				<br />
+				Entre diversas vantagens em ter o seu site em destaque!
 			</ChartText>
 			<ChartImageWrapper>
 				<ChartImage src="/images/chart/chart.png" alt="Resultados E-completo Carros" />

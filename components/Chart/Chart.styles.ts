@@ -133,11 +133,11 @@ export const ChartContent = styled.div`
 
 export const ChartText = styled.p`
 	color: ${Colors.WHITE};
-	font-size: 1.5rem;
-	line-height: 2;
+	font-size: 1.3rem;
+	line-height: 1.3;
 
 	${Medias.DESKTOP} {
-		width: 30%;
+		width: 40%;
 	}
 
 	${Medias.TABLET} {
@@ -148,7 +148,7 @@ export const ChartText = styled.p`
 export const ChartImageWrapper = styled.div`
 	${Medias.DESKTOP} {
 		margin-bottom: -80px;
-		width: 65%;
+		width: 55%;
 	}
 `
 
