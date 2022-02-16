@@ -106,7 +106,7 @@ const Contact: FC = () => {
 						rel="noopener"
 						href={`https://pagespeed.web.dev/report?url=${link}`}
 					>
-						Clique aqui e veja a avaliação do seu site atual
+						Clique aqui e veja a avaliação do seu site atualaaa
 					</ContactLink>
 				)}
 			</ContactForm>
