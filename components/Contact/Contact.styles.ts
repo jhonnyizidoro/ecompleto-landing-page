@@ -115,3 +115,16 @@ export const ContactInput = styled.input`
 		font-size: 1.2rem;
 	}
 `
+
+export const ContactLink = styled.a`
+	color: ${Colors.BLUE_1};
+	display: block;
+	font-size: 1.1rem;
+	font-weight: ${Fonts.BOLD};
+	margin-top: 25px;
+	text-align: center;
+
+	&:hover {
+		text-decoration: underline;
+	}
+`
