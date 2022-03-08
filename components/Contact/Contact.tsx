@@ -89,13 +89,15 @@ const Contact: FC = () => {
 					type="tel"
 					placeholder="Telefone de contato"
 					required
+					inputMode="numeric"
 				/>
 				<ContactInput
 					name="site"
 					aria-label="Seu site atual"
-					type="url"
+					type="text"
 					placeholder="Seu site atual (caso tenha)"
 					onChange={handleSiteChange}
+					inputMode="url"
 				/>
 				<Button type="submit" aria-label="Enviar contato" isLarge>
 					Ver resultados
