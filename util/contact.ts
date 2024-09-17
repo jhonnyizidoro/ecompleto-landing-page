@@ -1,7 +1,7 @@
 import { isMobile } from '@/util/device'
 
 export const openWhatsApp = () => {
-	const phone = '554199840610'
+	const phone = '554196014701'
 	const endpoint = isMobile.any() ? 'api.whatsapp.com' : 'web.whatsapp.com'
 
 	window.open(
